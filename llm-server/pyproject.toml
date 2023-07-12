@@ -8,7 +8,15 @@ packages = [{include = "llm_server", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+fastapi = "^0.100.0"
+uvicorn = "^0.22.0"
+gunicorn = "^20.1.0"
 
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.4.1"
+black = "^23.7.0"
+flake8 = "^6.0.0"
 
 [build-system]
 requires = ["poetry-core"]
